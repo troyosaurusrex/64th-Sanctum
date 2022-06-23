@@ -14,7 +14,7 @@ html, body {
   margin:0;
 }
 body {
-  font-size:18px; /* This controls the font size for everything but the subtitles in main  */
+  font-size:16px; /* This controls the font size for everything but the subtitles in main  */
 }
 
 header, nav {
@@ -26,7 +26,7 @@ aside {
 }
 .flex {
   display:flex;
-  max-width:2000px; /* This controls the width of all content except for header and nav, consider mobile implications if I stretch this to fit my monitor */
+  max-width:800px; /* This controls the width of all content except for header and nav, consider mobile implications if I stretch this to fit my monitor */
 }
 nav {
   max-height:25px;
