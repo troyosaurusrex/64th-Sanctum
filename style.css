@@ -26,7 +26,7 @@ aside {
 }
 .flex {
   display:flex;
-  max-width:800px; /* This controls the width of all content except for header and nav, consider mobile implications if I stretch this to fit my monitor */
+  max-width:1900px; /* This controls the width of all content except for header and nav, consider mobile implications if I stretch this to fit my monitor */
 }
 nav {
   max-height:25px;
