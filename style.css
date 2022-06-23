@@ -21,7 +21,7 @@ header, nav {
   max-width:100%; /* This changes how far across the screen the header and nav go, best to leave at 100 */
 }
 aside {
-  width:250px; /* Controls width of the 2 sidebars*/
+  max-width:250px; /* Controls width of the 2 sidebars*/
   margin-top:30px; /* Sets how much space is between the nav bar and side bars*/
 }
 .flex {
