@@ -38,7 +38,7 @@ header {
   max-height:200px;
   height:200px; /* Header size seems fine*/
   background-color:var(--header-bg); /* Fills out the header background color to go across the screen to the right*/
-  /*background-image:url('../Images/num.gif'); temporarily commented out */
+  background-image:url('../Images/num.gif'); /* Will need to mess with this if I ever go responsive */
   /* background-repeat:repeat-y; /* this prevents it from repeating horizontally, delete this line to copy the image across the whole header, or uncomment the line to make the image appear exactly once */
   background-size:200px; /* May need to change when we change our image */
   background-position:fixed; /* this prevents the image from shifting when the page is resized */
