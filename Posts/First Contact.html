@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The web site of The 64th Sanctum</title>
     <!-- This specifies the favicon (little icon on the browser tab) -->
-    <link rel="icon" href="./Images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon"/>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous"></script>
@@ -17,16 +17,40 @@
     <script src="/load.js"></script> 
   </head>
 <body>
-<h1>First Contact</h1>
-<p>This is the page where I put about</p>
-<div id="left-sidebar"></div>
-  <p>I thought I wanted a journal, just to get some words out on paper, but somehow I ended up with a blog. I was poking around at Youtube for some nostalgia fuel about the old internet and found some videos talking about Neocities. It was immediately reminiscent of the old days of the web, before smart phones came out. It was just hobbyists learning HTML and CSS and creating their own spaces. I immediately signed up, for a number of reasons.</p>
-      <p>First, I've just been looking for an outlet of self-expression. I believe it's healthy for humans to actively create things, whether it be music, art, writing, cooking, or websites, you should be able to put something out there that you can say "that's mine, I created it." I deleted all my social media around 2018, because it's a toxic cesspit, a waste of time, and actively making all of us dumber and unhappier. Also, they're stealing our data and using it to advertise to us. I could go on, but I won't. Getting back to the point, I still want to post stuff on the web. Even if nobody reads it but me, it makes me happy to have a page only about things I like, on a site that reminds me of the good ol' days.</p>
-      <p>Second, I've been feeling jaded with the web. It feels like there's only a few websites, they all feel similar, and a lot of the pages out there are so bloated with SEO and ad-words that most everything ends up feeling like a content farm. Endless "blogs" just reposting the same content over and over to farm clicks
-      and generate revenue. The passion just isn't there on the mainstream internet. I could go on about how this is caused by the society and culture we live in, and how capitalism turns literally everything into a measure of how much wealth something can generate or extract, but maybe I'll save that for another article.</p>
-      <p>Third, I just wanted to learn more about web dev. I already work in IT and played with HTML/CSS on Myspace back in the day, so it's nothing too unfamiliar here, but I just want to keep my options open. I have a good job that pays well, and I get to work from home, but I dream of one day just being able to build websites on my own. I want to keep my skills sharp and always try and learn new things. I tend to stagnate if I'm not actively learning, so here's hoping I keep up with this project. However, there's a good chance that one day I'll just up and stop posting, on to some other web project or entirely different hobby. Calling myself a hobby hopper wouldn't be inaccurate, but for some reason I feel like I'm gonna stick with this one for a while.</p>
-      
-      <p>Several HTML/CSS/JS rabbit holes later, I discover a tool called Zonelets that can be used with Neocities. I'll try this for a bit, but I might switch to a SSG like Jekyll at some point, so don't be alarmed if this all changes. Consider this my contribution to the <a href="https://web.archive.org/web/20191105090859/http://www.uzine.net/article63.html">indie web.</a></p>
-    
-    
-    </body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+  <div class="flex"> <!--This flex div is the main and 2 sidebars-->
+    <aside class="left-sidebar">
+      <div id="left-sidebar"></div>
+    </aside>
+    <main>
+      <article>
+        <div class="subtitle">Who am I?</div>
+          <p>I thought I wanted a journal, just to get some words out on paper, but somehow I ended up with a blog. I was poking around at Youtube for some nostalgia fuel about the old internet and found some videos talking about Neocities. It was immediately reminiscent of the old days of the web, before smart phones came out. It was just hobbyists learning HTML and CSS and creating their own spaces. I immediately signed up, for a number of reasons.
+          </p>
+          <p>First, I've just been looking for an outlet of self-expression. I believe it's healthy for humans to actively create things, whether it be music, art, writing, cooking, or websites, you should be able to put something out there that you can say "that's mine, I created it." I deleted all my social media around 2018, because it's a toxic cesspit, a waste of time, and actively making all of us dumber and unhappier. Also, they're stealing our data and using it to advertise to us. I could go on, but I won't. Getting back to the point, I still want to post stuff on the web. Even if nobody reads it but me, it makes me happy to have a page only about things I like, on a site that reminds me of the good ol' days.
+          </p>
+          <p>
+            Second, I've been feeling jaded with the web. It feels like there's only a few websites, they all feel similar, and a lot of the pages out there are so bloated with SEO and ad-words that most everything ends up feeling like a content farm. Endless "blogs" just reposting the same content over and over to farm clicks and generate revenue. The passion just isn't there on the mainstream internet. I could go on about how this is caused by the society and culture we live in, and how capitalism turns literally everything into a measure of how much wealth something can generate or extract, but maybe I'll save that for another article.
+          </p>
+          <p>
+            Third, I just wanted to learn more about web dev. I already work in IT and played with HTML/CSS on Myspace back in the day, so it's nothing too unfamiliar here, but I just want to keep my options open. I have a good job that pays well, and I get to work from home, but I dream of one day just being able to build websites on my own. I want to keep my skills sharp and always try and learn new things. I tend to stagnate if I'm not actively learning, so here's hoping I keep up with this project. However, there's a good chance that one day I'll just up and stop posting, on to some other web project or entirely different hobby. Calling myself a hobby hopper wouldn't be inaccurate, but for some reason I feel like I'm gonna stick with this one for a while.
+          </p>
+          <p>
+            Consider this my contribution to the <a href="https://web.archive.org/web/20191105090859/http://www.uzine.net/article63.html">indie web.</a>
+          </p> 
+      </article>
+      <article style="align-self: center">
+          <div class="commentbox"></div>
+          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+          <script>commentBox('5734149004460032-proj')</script>
+      </article>
+    </main>
+    <aside class="right-sidebar">
+      <div id="right-sidebar"></div>
+    </aside>
+    </div>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</body>

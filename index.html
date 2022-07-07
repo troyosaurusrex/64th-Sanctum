@@ -1,94 +1,72 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The web site of The 64th Sanctum</title>
     <!-- This specifies the favicon (little icon on the browser tab) -->
-    <link rel="icon" href="./Images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon"/>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+<!-- if you changed your file name be sure to change it here below -->
+    <script src="/load.js"></script> 
   </head>
-<div class="container"> <!--This div is the entire webpage-->
-  <header></header>
-  <nav class="navbar">
-    <ul class="nav"> <!--Could add a center tag here if desired-->
-             <li><a href="https://the64thsanctum.neocities.org/">Home</a></li>
-             <li><a href="/Contentpages/About.html">About</a></li>
-             <li><a href="https://neocities.org/site/the64thsanctum">Neocities Profile</a></li>
-             <li><a href="/Contentpages/Contact.html">Contact</a></li>
-        </ul></nav>
-  <div class="flex"> <!--This flex div is everything but the header and navbar-->
-    <aside class="left-sidebar">
-      <section>
-        <div class="subtitle">About Me</div>
-        <div>Just a wayward 30 something working in IT trying to shore up his web dev skills, while also hopefully putting some memories, thoughts, and ramblings to paper at the same time.</div></section>
-      <section>
-      <div class="subtitle">Everybody Loves Content</div>          <ul class="links">
-            <li><a href="/Contentpages/VidyaGames.html">Vidya Games</a></li>
-             <li><a href="/Contentpages/Fantasy.html">Fantasy/Sci-Fi</a></li>
-             <li><a href="/Contentpages/Food.html">Food/Travel</a></li>
-             <li><a href="/Contentpages/Philosophy.html">Philosophy/Life</a></li>
-             <li><a href="/Contentpages/Music.html">Music</a></li>
-             <li><a href="/Contentpages/Other.html">Everything Else</a></li>
-        </ul>
-          
-        </section>
-    <section>
-        <div class="subtitle">This will be a widget some day</div>
-           <p>Widget Widget, maybe a chatbox?</p>
-             
-        </section>
-    </aside>
-    <main>
-      <article>
-        <div class="subtitle">THE BLOG</div>
-      <div>This is going to be a place I mess around with HTML, CSS, potentially JS once I get a good handle on HTML and CSS. It's probably going to look shitty on mobile, sorry. The page is optimized to look good on my personal monitor. One day I might work on making this responsive, but for now it's just going to be an ugly sandbox with content in it. If it really means a lot to you to view this page on mobile, reach out to me (once I set up a contact page lmao)
-          
-    <br><br> I'm also going to be writing about stuff I like. I may do a re-read of The Cosmere or all of The First Law books and do a retrospective on each one. I may also write about other books I'm reading. I might recap DnD or talk about Warhammer. I'll definitely write about RPGs and games in the musou genre. I may document travels with my wife, write about the philosophy I'm reading, talk about (mostly metal) music, and who knows what else. We're making this shit up as we go. This website is under heavy construction so sorry in advance for any dead links. I struggle picking a layout. If you have any advice let me know!</div> </article>
-      <article> 
-        <div class="subtitle">The Good Shit</div>
-        <div><p>I think this is where I tell you how to navigate the site. Check out some of the links to the left to find my writings about things I like.</p>
-        <p>In the bottom left is where I would put my widget. <img src="/Images/ifihad1.PNG" alt="If I had one!" style="width:200px;height:200px;"> </p>
-          <p>On the right hand side, you can find some other good stuff that I didn't make.</p></div></article>
-      
-      <article>
-<div class="subtitle">To-do List</div>
-        <div><ul>
-<li>Add a chatbox</li>
-<li>Add a guestbook</li>
-<li>Update theme/header image</li>
-<li>Consider a 2nd stylesheet for posts just to get some flavor in the site</li>
-<li>Set up a contact page</li>
-<li>Create a template for Posts </li>
-<li>Center my header blocks above the main section</li>
-<li>Add the header and navbar to all other pages like the sidebar</li>
-<li>Long-term goal, but have enough content and a finalized design to join the Yesterweb Webring</li>
-</ul>
-</div></article>
-    </main>
-    <aside class="right-sidebar">
-      <section>
-    <div class="subtitle">Quote of the Random Undetermined Length of Time</div>
-        <div><p>"Life before Death. Strength before Weakness. Journey before Destination."</p><br>
-            -Brandon Sanderson, Author Extraordinaire
-          </div></section>
-      <section>
-        <div class="subtitle">Other Cool Blogs</div>          <ul class="links">
-            <li><a href="https://sadgrl.online/">SadGrl has the best Neocities page I've ever seen, her tutorials also helped build my pages</a></li>
-             <li><a href="https://milfgod.net/">Milf God has a great aesthetic</a></li>
-             
-        </ul></section>
-      <section>
-        <div class="subtitle">Recent Posts (to store my writing until Content Pages finished)</div>          <ul class="links">
-            <li><a href="#">link</a></li>
-             <li><a href="#">link</a></li>
-             <li><a href="#">link</a></li>
-        </ul>
-          
-        </section>
-    </aside>
+<body>
+  <div class="wrapper">
+    <div id="header"></div>   
+    <div id="navbar"></div>
+    <div class="container">
+      <div class="flex">
+        <aside class="left-sidebar">
+          <div id="left-sidebar"></div>
+        </aside>
+        
+        <main>
+          <article>
+            <div class="subtitle">The Blog</div>
+              <p>This is going to be a place I mess around with HTML, CSS, potentially JS once I get a good handle on HTML and CSS. It's probably going to look shitty on mobile, sorry. The page is currently optimized to look good on my personal monitor. I do intend to work on responsive design going forward.
+              </p>
+              
+              <p>I'm also going to be writing about stuff I like. I may do a re-read of The Cosmere or all of The First Law books and do a retrospective on each one. I may also write about other books I'm reading. I might recap DnD or talk about Warhammer. I'll definitely write about RPGs and games in the musou genre. I may document travels with my wife, write about the philosophy I'm reading, talk about (mostly metal) music, and who knows what else. We're making this shit up as we go. This website is under heavy construction so sorry in advance for any dead links.
+              </p>
+          </article>
+        
+          <article>
+            <div class="subtitle">The Good Shit</div>
+            <p>I think this is where I tell you how to navigate the site. Check out some of the links to the left to find my writings about things I like.</p>
+              
+            <p>On the right hand side, you can find some other good stuff that I didn't make.</p>
+          </article>    
+            
+          <article>
+            <div class="subtitle">To-do List</div>
+            <div>
+              <ul>
+                <li>Add a chatbox</li>
+                <li>Add a guestbook</li>
+                <li>Update header image or styling</li>
+                <li>Consider a 2nd stylesheet for posts just to get some flavor in the site</li>
+                <li style="text-decoration: line-through">Set up a contact page</li>
+                <li style="text-decoration: line-through">Create a template for Posts</li>
+                <li>Work on website responsiveness, prob by putting sidebars on a menu button</li>
+                <li>Long-term goal, but have enough content and a finalized design to join the Yesterweb or other Webrings</li>
+              </ul>
+            </div>
+          </article> 
+        </main>
+        
+        <aside class="right-sidebar">
+          <div id="right-sidebar"></div>
+        </aside>
+      </div>
+      <footer>
+        <div id="footer"></div>
+      </footer>
+    </div>
   </div>
-</div>
+</body>

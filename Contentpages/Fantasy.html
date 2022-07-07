@@ -5,32 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The web site of The 64th Sanctum</title>
     <!-- This specifies the favicon (little icon on the browser tab) -->
-    <link rel="icon" href="./Images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon"/>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous"></script>
 <!-- if you changed your file name be sure to change it here below -->
     <script src="/load.js"></script> 
   </head>
-<div id="header"></div>
-<div id="navbar"></div>
-<div class="flex"> <!--This flex div is everything but the header and navbar-->
-<div id="left-sidebar"></div>
-<main>
-   <article>
-       <div class="subtitle">Generic heading 1</div>
-            <div>I am me, yo </div> </article>
-      <article> 
-        <div class="subtitle">Generic heading 2</div>
-        <div><p>Let me tell you...
-          <p>About a thing!</p></div></article>
-      
+<body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+  <div class="flex"> <!--This flex div is the main and 2 sidebars-->
+    <aside class="left-sidebar">
+      <div id="left-sidebar"></div>
+    </aside>
+    <main>
       <article>
-<div class="subtitle">Generic heading 3</div>
-        <div><p>stuff goes here</p>
-</div></article>
-    </main></div>
+        <div class="subtitle">What will you find here?</div>
+          <p>
+              I'm still figuring out what to put in my various landing pages, but for now, you can expect me to talk about the fantasy books I've been reading. It's my preferred genre and probably makes up about 90% of the books I read. I've always been a big fantasy nerd since I was a young lad and that's only gotten stronger over time. I also might talk about the DnD sessions my friends and I have. We have been playing Descent into Avernus for nearly a year and it's been our longest running session yet. 
+          </p> 
+      </article>
+      <article> 
+        <div class="subtitle">What am I reading lately?</div>
+          <p>The Curse of Chalion by Lois McMaster Bujold - pretty close to being done with this one, maybe 50 pages left. I've really enjoyed it. The way the divinity works in this universe is very interesting and I plan to do a longer write-up once I finish it and the sequel. Check this one out if you like: court intrigue, an older protagonist (mid 30s), divinity taking an active role in the story</p>
+          
+          <p>“Events may be horrible or inescapable. Men have always a choice - if not whether, then how, they may endure.”</p>
+      </article>
+      
+    </main>
+    <aside class="right-sidebar">
+      <div id="right-sidebar"></div>
+    </aside>
+    </div>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</body>

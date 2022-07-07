@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of The 64th Sanctum</title>
+    <!-- This specifies the favicon (little icon on the browser tab) -->
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon"/>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+<!-- if you changed your file name be sure to change it here below -->
+    <script src="/load.js"></script> 
+  </head>
+<body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+  <div class="flex"> <!--This flex div is the main and 2 sidebars-->
+    <aside class="left-sidebar">
+      <div id="left-sidebar"></div>
+    </aside>
+    <main>
+      <article>
+        <div class="subtitle">What will you find here?</div>
+          <p>I </p> 
+      </article>
+      <article> 
+        <div class="subtitle">What do I like?</div>
+          <p>Let me tell you...</p>
+          <p>What do I dislike?</p>
+      </article>
+      
+      <article>
+        <div class="subtitle">Check out previous posts:</div>
+        <div>
+          <ul>
+            <li><a href="#">First article</a></li>
+            <li><a href="#">Second article</a></li>
+            <li><a href="#">Third article</a></li>
+            <li><a href="#">Fourth article</a></li>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <aside class="right-sidebar">
+      <div id="right-sidebar"></div>
+    </aside>
+    </div>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</body>

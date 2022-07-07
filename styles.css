@@ -1,0 +1,196 @@
+:root {
+  --grey-bg:#989898;
+  --main-bg:#333333; /* black */
+  --left-sidebar-bg:#ff2d2d;
+  --right-sidebar-bg:#00c5ff;
+}
+
+body, html {
+    font-size: 16px; /* font size for ALL text */
+    padding:0; /* Not sure this one is necessary */
+    margin:0; /* Removes unnecessary white space around the content */
+    background-image: url(Images/greengrid.jpg);
+}
+
+header, nav, main, aside {
+  border:1px solid black; /* Note that this is not for the sections within the main and the sidebar, only the outer containers, looks kinda naked without it, suggest keeping it */
+}
+
+header, footer, nav {
+  max-width: 100%; /* I believe this line is redundant since these are all block level elements and should take up their full width  */
+  text-align: center; /* Looks good, keep it this way */
+}
+
+aside {
+  width:230px;
+  flex-shrink: 1;    
+    /* Eventually will learn media queries  */
+  /* height: 500px; need to make sure height scales with the text of the flex box, i believe it does*/
+}
+
+.flex {
+  display: flex;
+  margin-top: 20px; /* Space between navbar and main content/sidebars */
+    justify-content: center; /* Absolutely vital, this centers all the main/sidebar content in the middle of the screen  */
+  max-width: 100%; /* Test this on mobile to see how it affects things. Sidebars might still be too big */
+  
+}
+
+nav {  /* This is the selector for the navbar itself */
+  max-height:25px;
+  height:25px;
+  margin-bottom: 10px;
+  background-color: var(--grey-bg);
+}
+
+.navlinks {  /* This is the selector for the whole <ul> list  */
+    margin-top: 5px;
+    text-align: inherit;
+   
+}
+
+.navlinks li {  /* This is the selector for each <li> in the unordered list on the navbar */
+    display: inline-block; /* This makes the navbar links line up horizontally */
+    padding-left:30px;
+    padding-right: 30px; /* I'm not smart enough to align the navbar links without padding. Looks fine for now but I would eventually like to fix, low priority */
+}
+
+header {
+  max-height:200px;
+  height:200px;
+  margin-bottom: 10px;
+  background-color: var(--grey-bg);
+}
+
+main {
+  width:100%; /* Currently this is pointless since I have .flex width set at 100% but i may need this for responsiveness */
+  background-color:var(--main-bg); /* This is the black screen in the center */
+  max-width: 1000px; 
+  /* height: 600px; taking this out because I think it's causing text to get cut off*/
+  margin: 0 5px; /* Keep as-is to retain it looking like a switch */
+  /* flex-grow: 1; */
+  flex-shrink: 0; /* this tells it not to shrink - on mobile, makes sidebars disappear, so consider adding media queries to change the menu button perhaps */
+}
+
+section {
+  border:1px solid black;
+  margin-bottom:10px; /* Margin between sidebar sections */
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links {
+    margin-bottom: inherit; /* Fine for now */
+}
+
+article {
+    border:1px solid black;
+    margin: 10px 15px;
+    color: white;
+    /* background color? */
+}
+
+article p {
+    margin-left: 10px;
+}
+
+article h2, h3 {
+    margin-left: 10px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+article p a {
+    color: ghostwhite;
+    
+}
+
+.subtitle {
+    border: 1px solid black;
+    background-color:var(--main-bg);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.left-sidebar {
+  background-color:var(--left-sidebar-bg);
+}
+
+.right-sidebar {
+  background-color:var(--right-sidebar-bg);
+}
+
+.links {
+    list-style-type:none;
+}
+
+.links li a:link {
+  color:black;
+  font-weight: bold;
+}
+
+/*
+.links li a:visited {
+  color:purple;
+  font-weight: bold;
+}
+*/
+
+.navlinks li a {
+  color:black;
+  font-weight: bold;
+}
+
+main .subtitle {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: var(--grey-bg);
+    max-height:25px;
+    height:25px;
+}
+
+#statuscafe {
+    padding: .5em;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+.commentbox {
+   text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* @media (max-width: 700px)  {
+    body {
+      color:antiquewhite
+    }
+}
+
+/* N64 palette: Grey is #C1BED1 RGB(193,190,209) https://www.colourlovers.com/palette/1898124/N64
+Green is #069330 RGB(6,147,48)
+Yellow is #FFC001 RGB(255,192,1)
+Blue is #011DA9 RGB(1,29,169)
+Red is #C20D02 RGB(194,13,2)
+
+SNES controller palette: https://www.color-hex.com/color-palette/47707
+#a7a4e0	(167,164,224)
+#514689	(81,70,137)
+#b2b4b2	(178,180,178)
+#54585a	(84,88,90)
+#707372	(112,115,114) */

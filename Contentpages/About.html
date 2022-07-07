@@ -5,37 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The web site of The 64th Sanctum</title>
     <!-- This specifies the favicon (little icon on the browser tab) -->
-    <link rel="icon" href="./Images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon"/>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous"></script>
 <!-- if you changed your file name be sure to change it here below -->
     <script src="/load.js"></script> 
   </head>
-<div id="header"></div>
-<div id="navbar"></div>
-<div class="flex"> <!--This flex div is everything but the header and navbar-->
-<div id="left-sidebar"></div>
-<main>
-   <article>
-       <div class="subtitle">Who am I?</div>
-            <div>I am me, yo </div> </article>
+<body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+  <div class="flex"> <!--This flex div is the main and 2 sidebars-->
+    <aside class="left-sidebar">
+      <div id="left-sidebar"></div>
+    </aside>
+    <main>
+      <article>
+        <div class="subtitle">Who am I?</div>
+          <p>30 something IT guy working for a soul-less corporation. I don't believe that we should define ourselves by our occupations, as we are so much more than that. I live in a modest home in one of the many suburbs of the DFW metroplex with my wife, 2 dogs, and 3 cats. I like to spend my down time gaming, reading, and listening to music.</p>
+          <p>I also enjoy cooking! I spent a lot of time during the pandemic improving my cooking skills. I dabbled in cuisines from various cultures, especially Japanese and Korean. My most proud accomplishment was learning fermentation and making a huge batch of kimchi. I've also made my own fermented mustard and hot sauce. I also rekindled my love for metal music during quarantine and taught myself how to scream. Now, I'm hobby hopping again and learning web development, because why not? </p> 
+      </article>
       <article> 
         <div class="subtitle">What do I like?</div>
-        <div><p>Let me tell you...
-          <p>What do I dislike?</p></div></article>
+          <p>Check out the sidebar on the left! I feel like I have a fairly wide range of interests, so click each link to learn more.</p>
+      </article>
       
       <article>
-<div class="subtitle">What do I want to do?</div>
-        <div><ul>
-<li>Make dope ass website</li>
-<li>Go to Hawaii</li>
-<li>Quit my job and travel the world</li>
-<li>Download books into my brain</li>
-</ul>
-</div></article>
-    </main></div>
+        <div class="subtitle">What else?</div>
+        <p>More to come in the future I guess! Hit me at the contact link (once I get it set up lol) if you have any feedback, suggestions, or random thoughts!</p>
+      </article>
+    </main>
+    <aside class="right-sidebar">
+      <div id="right-sidebar"></div>
+    </aside>
+    </div>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</body>
