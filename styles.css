@@ -172,8 +172,23 @@ footer {
    text-align: center;
 }
 
+figure {
+    border: 10px solid #000;
+    position: relative;
+}
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 figcaption {
-    font-style: italic;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* @media (max-width: 700px)  {
