@@ -182,6 +182,11 @@ figcaption {
     padding: 5px 10px;
 }
 
+figure {
+    text-align: center;
+}
+
+
 /* uncomment this to disappear the sidebars @media (max-width: 768px) {
     aside {
         display: none;
