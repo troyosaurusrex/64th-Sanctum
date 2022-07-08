@@ -22,8 +22,8 @@ header, footer, nav {
 }
 
 aside {
-  width:230px;
-  flex-shrink: 1;    
+  max-width: 230px;
+  flex-shrink: 2;    
     /* Eventually will learn media queries  */
   /* height: 500px; need to make sure height scales with the text of the flex box, i believe it does*/
 }
@@ -67,9 +67,9 @@ main {
   background-color:var(--main-bg); /* This is the black screen in the center */
   max-width: 1000px; 
   /* height: 600px; taking this out because I think it's causing text to get cut off*/
-  margin: 0 5px; /* Keep as-is to retain it looking like a switch */
-  /* flex-grow: 1; */
-  flex-shrink: 0; /* this tells it not to shrink - on mobile, makes sidebars disappear, so consider adding media queries to change the menu button perhaps */
+  margin: 0 5px; /* Keep as-is to retain it looking like a switch */ 
+  flex-grow: 2;
+  flex-shrink: 0;
 }
 
 section {
@@ -177,13 +177,17 @@ figcaption {
     text-align: center;
 }
 
-.left-sidebar {
-    position: sticky;
+.sidebar-section {
+    margin: 5px 5px;
+    padding: 5px 10px;
 }
 
-.right-sidebar {
-    position: sticky;
+/* uncomment this to disappear the sidebars @media (max-width: 768px) {
+    aside {
+        display: none;
+    }
 }
+*/
 
 /* @media (max-width: 700px)  {
     body {
