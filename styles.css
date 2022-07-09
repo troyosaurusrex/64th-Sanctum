@@ -10,30 +10,35 @@ body, html {
     padding:0; /* Not sure this one is necessary */
     margin:0; /* Removes unnecessary white space around the content */
     background-image: url(Images/greengrid.jpg);
+    font-family: Cantoria, serif;
 }
 
 header, nav, main, aside {
   border:1px solid black; /* Note that this is not for the sections within the main and the sidebar, only the outer containers, looks kinda naked without it, suggest keeping it */
 }
 
-header, footer, nav {
-  max-width: 100%; /* I believe this line is redundant since these are all block level elements and should take up their full width  */
-  text-align: center; /* Looks good, keep it this way */
+header, nav, footer {
+    background-color: var(--grey-bg);
+    text-align: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    font-family: 'Press Start 2P', cursive;
 }
 
-aside {
-  max-width: 230px;
-  flex-shrink: 2;    
-    /* Eventually will learn media queries  */
-  /* height: 500px; need to make sure height scales with the text of the flex box, i believe it does*/
+/* Begin header and nav */
+
+header {
+  max-height:200px;
+  height:200px;
+  margin-bottom: 10px;
+  background-color: var(--grey-bg);
+    font-family: 'Press Start 2P', cursive;
 }
 
-.flex {
-  display: flex;
-  margin-top: 20px; /* Space between navbar and main content/sidebars */
-    justify-content: center; /* Absolutely vital, this centers all the main/sidebar content in the middle of the screen  */
-  max-width: 100%; /* Test this on mobile to see how it affects things. Sidebars might still be too big */
-  
+header h1 {
+    text-align: center;
 }
 
 nav {  /* This is the selector for the navbar itself */
@@ -46,7 +51,6 @@ nav {  /* This is the selector for the navbar itself */
 .navlinks {  /* This is the selector for the whole <ul> list  */
     margin-top: 5px;
     text-align: inherit;
-   
 }
 
 .navlinks li {  /* This is the selector for each <li> in the unordered list on the navbar */
@@ -55,42 +59,58 @@ nav {  /* This is the selector for the navbar itself */
     padding-right: 30px; /* I'm not smart enough to align the navbar links without padding. Looks fine for now but I would eventually like to fix, low priority */
 }
 
-header {
-  max-height:200px;
-  height:200px;
-  margin-bottom: 10px;
-  background-color: var(--grey-bg);
+.navlinks li a {
+  color:black;
+  font-weight: bold;
+}
+
+/* End header and nav */
+
+/* Begin flexbox, main, sidebars */
+
+.flex {
+  display: flex;
+  margin-top: 20px; /* Space between navbar and main content/sidebars */
+  justify-content: center; /* Absolutely vital, this centers all the main/sidebar content in the middle of the screen  */
+  max-width: 100%; /* Test this on mobile to see how it affects things. Sidebars might still be too big */
+}
+
+.subtitle {
+    border: 1px solid black;
+    background-color:var(--main-bg);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 18;
 }
 
 main {
   width:100%; /* Currently this is pointless since I have .flex width set at 100% but i may need this for responsiveness */
   background-color:var(--main-bg); /* This is the black screen in the center */
   max-width: 800px; 
-  /* height: 600px; taking this out because I think it's causing text to get cut off*/
   margin: 0 5px; /* Keep as-is to retain it looking like a switch */ 
   flex-grow: 2;
   flex-shrink: 0;
 }
 
-section {
+main .subtitle {
+    text-transform: uppercase;
+}
+
+aside {
+  max-width: 230px;
+  flex-shrink: 2;    
+}
+
+aside section {
   border:1px solid black;
   margin-bottom:10px; /* Margin between sidebar sections */
-}
-
-footer {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.links {
-    margin-bottom: inherit; /* Fine for now */
 }
 
 article {
     border:1px solid black;
     margin: 10px 15px;
-    color: white;
-    /* background color? */
+    color: #ebebeb; /* Need this for readability on all main text, don't put in individual elements */
 }
 
 article p {
@@ -102,7 +122,12 @@ article h2, h3 {
     text-align: center;
 }
 
-h1 {
+article figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
     text-align: center;
 }
 
@@ -110,6 +135,41 @@ article p a {
     color: ghostwhite;
     
 }
+
+.left-sidebar {
+  background-color:var(--left-sidebar-bg);
+}
+
+.sidebar-section {
+    margin: 5px 5px;
+    padding: 5px 10px;
+}
+
+.right-sidebar {
+  background-color:var(--right-sidebar-bg);
+}
+
+/* End flexbox, main, sidebars */
+
+/* Begin links styling */
+
+.links {
+    list-style-type:none;
+}
+
+.links li {
+    margin-bottom: 3px;
+}
+
+.links li a:link {
+  color:black;
+  font-weight: bold;
+}
+
+main a:link {
+    color:whitesmoke
+}
+
 main a:visited {
     color:darkgrey;
 }
@@ -130,52 +190,21 @@ main a:visited {
     color: black;
 }
 
-.subtitle {
-    border: 1px solid black;
-    background-color:var(--main-bg);
-    font-weight: bold;
-    color: white;
+/* End links styling */
+
+/* Begin footer styling */
+
+footer {
+  max-height:25px;
+  height:25px;
+}
+
+footer p {
     text-align: center;
 }
 
-.left-sidebar {
-  background-color:var(--left-sidebar-bg);
-}
 
-.right-sidebar {
-  background-color:var(--right-sidebar-bg);
-}
-
-.links {
-    list-style-type:none;
-}
-
-.links li a:link {
-  color:black;
-  font-weight: bold;
-}
-
-/*
-.links li a:visited {
-  color:purple;
-  font-weight: bold;
-}
-*/
-
-.navlinks li a {
-  color:black;
-  font-weight: bold;
-}
-
-main .subtitle {
-    text-transform: uppercase;
-}
-
-footer {
-    background-color: var(--grey-bg);
-    max-height:25px;
-    height:25px;
-}
+/* Begin widgets */
 
 #statuscafe {
     padding: .5em;
@@ -191,27 +220,13 @@ footer {
    text-align: center;
 }
 
-figcaption {
-    font-style: italic;
-    text-align: center;
-}
 
-.sidebar-section {
-    margin: 5px 5px;
-    padding: 5px 10px;
-}
-
-figure {
-    text-align: center;
-}
-
-
-/* uncomment this to disappear the sidebars @media (max-width: 768px) {
+@media (max-width: 768px) {
     aside {
         display: none;
     }
 }
-*/
+
 
 /* @media (max-width: 700px)  {
     body {
