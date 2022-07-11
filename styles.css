@@ -23,7 +23,7 @@ header, nav, footer {
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 100%;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -223,6 +223,9 @@ footer p {
 
 @media (max-width: 768px) {
     aside {
+        display: none;
+    }
+    .navlinks {
         display: none;
     }
 }
