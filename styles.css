@@ -230,6 +230,35 @@ footer p {
     }
 }
 
+.boxart {
+    max-height: 100%;
+    max-width: 100%;
+    height: 450px;
+    width: 400px;
+}
+
+@media (max-width: 768px) {
+    .boxart {
+        height: 100%;
+        width:100%;
+    }
+}
+
+.boxartrow {
+    display: flex;
+  margin-top: 5px; /* Space between navbar and main content/sidebars */
+  max-width: 100%; /* Test this on mobile to see how it affects things. Sidebars might still be too big */
+}
+
+.boxartcollage {
+    width: 100%;
+    height:100%;
+}
+
+.boxartfull {
+    width: 100%;
+    height:100%;
+}
 
 /* @media (max-width: 700px)  {
     body {
