@@ -84,6 +84,14 @@ nav {  /* This is the selector for the navbar itself */
     font-size: 18;
 }
 
+h6 {
+    background-color:var(--main-bg);
+    color: white;
+    text-align: center;
+    padding: 1px 1px;
+    margin: 10px 300px;
+}
+
 main {
   width:100%; /* Currently this is pointless since I have .flex width set at 100% but i may need this for responsiveness */
   background-color:var(--main-bg); /* This is the black screen in the center */
@@ -117,8 +125,9 @@ article p {
     margin-left: 10px;
 }
 
-article h2, h3 {
+article h2, h3, h4, h5 {
     margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
 }
 
