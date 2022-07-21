@@ -126,6 +126,10 @@ article figure {
     text-align: center;
 }
 
+article div {
+    text-align: center;
+}
+
 figcaption {
     font-style: italic;
     text-align: center;
@@ -133,7 +137,6 @@ figcaption {
 
 article p a {
     color: ghostwhite;
-    
 }
 
 .left-sidebar {
@@ -258,6 +261,19 @@ footer p {
 .boxartfull {
     width: 100%;
     height:100%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px;
+    border-color:black;
+    border-style: solid;
+    padding: 10px 10px;
+    flex-wrap: wrap;
 }
 
 /* @media (max-width: 700px)  {
