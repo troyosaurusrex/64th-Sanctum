@@ -148,6 +148,9 @@ article p a {
     color: ghostwhite;
 }
 
+div p {
+    color: ghostwhite;
+}
 article img {
     text-align: center;
     padding-left: 10px;
