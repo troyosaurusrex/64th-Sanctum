@@ -151,6 +151,7 @@ article p a {
 div p {
     color: ghostwhite;
 }
+
 article img {
     text-align: center;
     padding-left: 10px;
@@ -223,6 +224,13 @@ footer p {
     text-align: center;
 }
 
+.journalhead {
+    text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /* Begin widgets */
 
