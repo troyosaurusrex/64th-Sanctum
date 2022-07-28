@@ -184,7 +184,7 @@ article img {
 }
 
 main a:link {
-    color:whitesmoke
+    color:whitesmoke;
 }
 
 main a:visited {
@@ -245,11 +245,17 @@ footer p {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     aside {
         display: none;
     }
     .navlinks {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) {
+    #mainMenu {
         display: none;
     }
 }
@@ -315,6 +321,63 @@ justify-content: center;
 .centertext {
     text-align: center;
 }
+
+/* Start hamburger menu */
+
+#menuShowHide {
+    display: none;
+}
+
+@media (max-width:1200px) {
+	body {
+		padding:0;
+	}
+	#mainMenu {
+		display:none;
+		overflow:hidden; /* wrap floats and margins */
+		padding:0.25em;
+	}
+	#mainMenu li {
+		float:left;
+		width:50%;
+	}
+	#mainMenu a {
+		display:block;
+		padding:0.75em;
+		margin:0.25em;
+		background:var(--right-sidebar-bg);
+        color: black;
+        word-wrap: break-word;
+	}
+	#menuShowHide + label {
+		display:block;
+		padding:1em;
+		margin-bottom:1em;
+		text-align:center;
+		font-weight:bold;
+		background:var(--left-sidebar-bg);
+		color:#FFF;
+	}
+	#menuShowHide + label:active,
+	#menuShowHide + label:focus,
+	#menuShowHide + label:hover {
+		background:var(--right-sidebar-bg);
+	}
+	#menuShowHide + label:before {
+		content:"Show menu";
+	}
+	#menuShowHide:checked + label {
+		margin:0;
+	}
+	#menuShowHide:checked + label:before {
+		content:"Hide Menu";
+	}
+	#menuShowHide:checked ~ #mainMenu {
+		display:block;
+	}
+}
+
+/* End hamburger menu
 
 /* @media (max-width: 700px)  {
     body {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of The 64th Sanctum</title>
+    <!-- This specifies the favicon (little icon on the browser tab) -->
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon"/>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fontcity.neocities.org/cantoria.css?family=cantoria">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+<!-- if you changed your file name be sure to change it here below -->
+    <script src="/load.js"></script> 
+  </head>
+<body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+  <div class="flex"> <!--This flex div is the main and 2 sidebars-->
+    <aside class="left-sidebar">
+      <div id="left-sidebar"></div>
+    </aside>
+    <main>
+      <article>
+        <div class="subtitle">Site-building resources</div>
+        <h6>
+          <script language="Javascript">
+            document.write("This page last modified on: " + document.lastModified +"");
+          </script>
+        </h6>
+      </article>
+     
+      <article>
+        <div class="subtitle">assorted web stuff</div>
+          <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">In depth Flexbox guide</a> - if you want your shit to line up, check it out. All you're doing is defining your axes (the geometric kind, not the sharp weapon kind) and lining up the items across the axes.
+          </p>
+          <p>
+          <a href="http://flexboxfroggy.com/">Flexbox Froggy</a> - if you learn better with projects as opposed to text on a page, then this will help you understand flexbox.
+          </p>
+          <p>
+              <a href="https://web.dev/accessible/#create-a-design-and-css-that-supports-users-with-different-needs">Responsive Web Design</a>
+          </p>
+          <p>
+              <a href="https://github.com/n3r4zzurr0/svg-spinners">SVG Spinners (Loading Icons)</a>
+          </p>
+          <p>
+              <a href="https://andreasbm.github.io/web-skills/">So you want to be a front-end developer</a>
+          </p>
+          <p>
+              <a href="https://learn.sadgrl.online/put-a-navbar-or-sidebar-on-every-page/">Same text on every page</a>
+          </p>
+      </article>
+      <article>
+          <div class="subtitle">Links of Links</div>
+          <p><a href="https://computerboygirl.neocities.org/main/links.html">Serial Experiments Lee</a></p>
+          <p><a href="https://sadgrl.online/webmastery/">Sadgrl Online</a></p>
+          <p><a href="http://lu.tiny-universes.net/index2.html"></a>Lu's Tiny Universes</p>
+          <p><a href="https://keysklubhouse.neocities.org/links.html#lists">Key's Klubhouse</a></p>
+      </article>
+      <article style="align-self: center">
+          <div class="commentbox"></div>
+          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+          <script>commentBox('5734149004460032-proj')</script>
+      </article>
+    </main>
+    <aside class="right-sidebar">
+      <div id="right-sidebar"></div>
+    </aside>
+    </div>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</body>
