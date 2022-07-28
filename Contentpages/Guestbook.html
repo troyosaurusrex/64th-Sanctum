@@ -30,12 +30,15 @@
     <main>
       <article>
         <div class="subtitle">Guestbook</div>
-          <p class="centertext">
-              <a href="http://64thsanctum.123Guestbook.com/" target="guestbook">Click here to sign my guestbook!</a>
-          </p>
-        <div class="guestbookwrapper">
-          <iframe class="guestbook" name="guestbook"></iframe>
-        </div>
+                 
+    <p class="centertext" onclick="displayIframe()">Click here to sign my guest book</p>
+  <div class="guestbookwrapper" id="iframeDisplay"></div>  
+
+<script>
+    function displayIframe() {
+        document.getElementById("iframeDisplay").innerHTML = "<iframe class='guestbook' src='http://64thsanctum.123Guestbook.com/'  ></iframe>";
+    }
+</script>
       </article>
     </main>
     <aside class="right-sidebar">

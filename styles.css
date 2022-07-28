@@ -320,9 +320,10 @@ justify-content: center;
 
 .centertext {
     text-align: center;
+    text-decoration: underline;
 }
 
-/* Start hamburger menu */
+/* Start mobile menu */
 
 #menuShowHide {
     display: none;
@@ -377,7 +378,7 @@ justify-content: center;
 	}
 }
 
-/* End hamburger menu
+/* End mobile menu */
 
 /* @media (max-width: 700px)  {
     body {
