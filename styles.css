@@ -252,10 +252,13 @@ footer p {
     .navlinks {
         display: none;
     }
+    .navbar {
+        display: none;
+    }
 }
 
 @media (min-width: 1201px) {
-    #mainMenu {
+    #mobileMenu {
         display: none;
     }
 }
@@ -333,16 +336,16 @@ justify-content: center;
 	body {
 		padding:0;
 	}
-	#mainMenu {
+	#mobileMenu {
 		display:none;
 		overflow:hidden; /* wrap floats and margins */
 		padding:0.25em;
 	}
-	#mainMenu li {
+	#mobileMenu li {
 		float:left;
 		width:50%;
 	}
-	#mainMenu a {
+	#mobileMenu a {
 		display:block;
 		padding:0.75em;
 		margin:0.25em;
@@ -373,7 +376,7 @@ justify-content: center;
 	#menuShowHide:checked + label:before {
 		content:"Hide Menu";
 	}
-	#menuShowHide:checked ~ #mainMenu {
+	#menuShowHide:checked ~ #mobileMenu {
 		display:block;
 	}
 }
