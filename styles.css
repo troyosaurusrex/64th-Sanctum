@@ -113,6 +113,11 @@ aside {
 aside section {
   border:1px solid black;
   margin-bottom:10px; /* Margin between sidebar sections */
+  text-overflow: wrap;
+}
+
+.yw-widget-full {
+    max-width: 80%;
 }
 
 article {
